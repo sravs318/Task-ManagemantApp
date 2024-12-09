@@ -1,0 +1,84 @@
+nav {
+  width: 250px;
+}
+/* Sidebar container */
+.sidebar {
+  width: 250px;
+  background-color: #f9fafb;
+  padding: 20px;
+  border-right: 1px solid #e5e7eb;
+}
+
+/* Section heading styles */
+.section-heading {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Color-coded section headings */
+.family-checkbox {
+  color: #ef4444; /* Red color for "Family" checkbox */
+  font-weight: bold;
+}
+input[type="checkbox"].red-checkbox {
+  accent-color: #ef4444; /* Set checkbox to red */
+}
+
+.work-checkbox {
+  color: #10b981; /* Green color for "Work" text */
+  font-weight: bold;
+}
+
+
+/* Checkbox group styles */
+.checkbox-group {
+  margin-bottom: 20px; /* Add spacing between sections */
+}
+
+.checkbox-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #374151; /* Neutral text color */
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Add spacing between sections */
+.section {
+  margin-bottom: 30px;
+}
+
+.sidebar1 {
+  width: 250px;
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-list li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.sidebar-list li i {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #555;
+}
+
+.sidebar-list li:hover {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+

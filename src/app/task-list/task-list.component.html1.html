@@ -1,0 +1,140 @@
+<!-- <div> -->
+  <!-- Heading Bar -->
+  <!-- <div class="heading-bar d-flex justify-content-between align-items-center">
+    <div class="title">
+      <h1>Today Task</h1>
+    </div>
+    <div class="filters d-flex">
+      <button *ngFor="let filter of filters"
+              class="filter-btn"
+              [class.active]="selectedFilter === filter"
+              (click)="selectFilter(filter)">
+        {{ filter }}
+      </button>
+    </div>
+  </div> -->
+
+  <!-- Tasks Section -->
+  <!-- <div class="tasks-section">
+    <div *ngFor="let task of tasks" class="task-item">
+      <input type="checkbox" [checked]="task.status === 'Completed'" />
+      <label>{{ task.title }}</label>
+      <span class="badge">{{ task.status }}</span>
+    </div>
+  </div> -->
+
+  <!-- Upcoming Tasks -->
+  <!-- <div class="tasks-section">
+    <h2>Upcoming Tasks</h2>
+    <div *ngFor="let task of upcomingTasks" class="task-item">
+      <input type="checkbox" [checked]="task.status === 'Completed'" />
+      <label>{{ task.title }}</label>
+      <span class="badge">{{ task.status }}</span>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div> -->
+  <!-- Main Heading -->
+  <!-- <div class="main-heading">
+    <h1>Today Task</h1>
+  </div> -->
+
+  <!-- Heading Bar -->
+  <!-- <div class="heading-bar d-flex align-items-center">
+    <button
+      *ngFor="let filter of filters"
+      class="filter-btn"
+      [class.active]="selectedFilter === filter"
+      (click)="selectFilter(filter)"
+    >
+      {{ filter }}
+    </button>
+  </div> -->
+
+  <!-- Tasks Section -->
+  <!-- <div class="tasks-section">
+    <div *ngFor="let task of tasks" class="task-item">
+      <input type="checkbox" [checked]="task.status === 'Completed'" />
+      <label>{{ task.title }}</label>
+      <span class="badge">{{ task.status }}</span>
+    </div>
+  </div> -->
+
+  <!-- Upcoming Tasks -->
+  <!-- <div class="tasks-section">
+    <h2>Upcoming Tasks</h2>
+    <div *ngFor="let task of upcomingTasks" class="task-item">
+      <input type="checkbox" [checked]="task.status === 'Completed'" />
+      <label>{{ task.title }}</label>
+      <span class="badge">{{ task.status }}</span>
+    </div>
+  </div>
+</div> -->
+
+<div class="task-list-container">
+  <!-- Today Task Section -->
+  <div class="today-task">
+    <h2>Today Task</h2>
+
+     <!-- Heading Bar Section -->
+     <div class="heading-bar">
+      <span
+        class="heading-item"
+        *ngFor="let heading of headings"
+        [class.active]="selectedHeading === heading"
+        (click)="selectHeading(heading)"
+      >
+        {{ heading.name }}
+        <span *ngIf="heading.count > 0" class="heading-count">
+          {{ heading.count }}
+        </span>
+      </span>
+    </div>
+
+    <div class="task-list">
+      <label class="task-item" *ngFor="let task of todayTasks">
+        <input
+          type="checkbox"
+          [(ngModel)]="task.completed"
+          (change)="onTaskStatusChange(task)"
+        />
+        <span [class.purple]="task.completed">{{ task.name }}</span>
+        <span
+          class="status"
+          [ngClass]="{
+            'approved': task.status === 'Approved',
+            'in-progress': task.status === 'In Progress',
+            'in-review': task.status === 'In Review',
+            'waiting': task.status === 'Waiting'
+          }"
+        >
+          {{ task.status }}
+        </span>
+      </label>
+    </div>
+  </div>
+
+  <!-- Upcoming Tasks Section -->
+  <div class="upcoming-task">
+    <h2>Upcoming Tasks</h2>
+    <div class="task-list">
+      <label class="task-item" *ngFor="let task of upcomingTasks">
+        <input
+          type="checkbox"
+          [(ngModel)]="task.completed"
+          (change)="onUpcomingTaskStatusChange(task)"
+        />
+        <span [class.purple]="task.completed">{{ task.name }}</span>
+        <span
+          class="status"
+          [ngClass]="{
+            'waiting': task.status === 'Waiting'
+          }"
+        >
+          {{ task.status }}
+        </span>
+      </label>
+    </div>
+  </div>
+</div>

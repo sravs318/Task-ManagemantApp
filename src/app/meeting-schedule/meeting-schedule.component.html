@@ -1,0 +1,20 @@
+<div>
+  <h2>Meetings Schedule</h2>
+  <div
+    class="card mb-3 p-2"
+    *ngFor="let meeting of meetings"
+    [ngClass]="meeting.color"
+  >
+    <h5 class="mb-1">{{ meeting.time }}</h5>
+    <p class="mb-1">{{ meeting.title }}</p>
+    <div class="d-flex align-items-center">
+      <img
+        *ngFor="let participant of meeting.participants"
+        [src]="participant"
+        alt="participant"
+        class="rounded-circle me-2"
+        width="28"
+      />
+    </div>
+  </div>
+</div>

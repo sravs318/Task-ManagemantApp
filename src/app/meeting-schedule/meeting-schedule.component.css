@@ -1,0 +1,21 @@
+.card {
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+.card.yellow {
+  background-color: #ffd54f;
+}
+
+.card.blue {
+  background-color: #4fc3f7;
+}
+
+.card.red {
+  background-color: #e57373;
+}
+
+.card.green {
+  background-color: #81c784;
+}

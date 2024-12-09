@@ -1,0 +1,285 @@
+/* .badge.approved {
+  background-color: #4caf50;
+  color: white;
+}
+
+.badge.in-progress {
+  background-color: #2196f3;
+  color: white;
+}
+
+.badge.waiting {
+  background-color: #f44336;
+  color: white;
+} */
+/* Heading Bar */
+
+
+/* .heading-bar {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 10px;
+}
+
+.heading-bar .title h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.heading-bar .filters {
+  gap: 10px;
+}
+
+.filter-btn {
+  border: none;
+  background: none;
+  padding: 5px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #6b7280;
+  border-radius: 20px;
+}
+
+.filter-btn.active {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+.tasks-section {
+  margin-top: 20px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.task-item label {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.badge {
+  background-color: #4caf50;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+} */
+
+/* Main Heading */
+.main-heading h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+/* Heading Bar */
+.heading-bar {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.filter-btn {
+  border: none;
+  background: none;
+  padding: 5px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #6b7280;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.filter-btn.active {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+.tasks-section {
+  margin-top: 20px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.task-item label {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.badge {
+  background-color: #4caf50;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+
+/* General Task Styles */
+.today-task {
+  margin-top: 20px;
+}
+
+.today-task h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.task-list {
+  display: flex;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  flex-direction: column;
+  gap: 13px;
+  font-size: 3px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+/* Checkbox Styles */
+.task-item input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color: #6b46c1; /* Purple for checked checkbox */
+}
+
+/* Dynamic Text Colors */
+.task-item span {
+  margin-right: 10px;
+}
+
+.task-item span.purple {
+  color: #6b46c1; /* Purple for task name when completed */
+}
+
+/* Status Styles */
+.status {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.status.approved {
+  background-color: #6b46c1; /* Purple for Approved */
+}
+
+.status.in-progress {
+  background-color: #10b981; /* Green for In Progress */
+}
+
+.status.in-review {
+  background-color: #ef4444; /* Red for In Review */
+}
+
+
+
+/* General Task Styles */
+.task-list-container {
+  margin-top: 20px;
+}
+
+.today-task h2,
+.upcoming-task h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* Checkbox Styles */
+.task-item input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color: #6b46c1; /* Purple for checked checkbox */
+}
+
+/* Dynamic Text Colors */
+.task-item span {
+  margin-right: 10px;
+}
+
+.task-item span.purple {
+  color: #6b46c1; /* Purple for task name when completed */
+}
+
+/* Status Styles */
+.status {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.status.approved {
+  background-color: #6b46c1; /* Purple for Approved */
+}
+
+.status.in-progress {
+  background-color: #10b981; /* Green for In Progress */
+}
+
+.status.in-review {
+  background-color: #ef4444; /* Red for In Review */
+}
+
+.status.waiting {
+  background-color: #9ca3af; /* Gray for Waiting */
+}
+
+.heading-bar {
+  display: flex;
+  gap: 15px;
+}
+
+.heading-item {
+  cursor: pointer;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.heading-item:hover {
+  background-color: #ddd;
+}
+
+.heading-item.active {
+  background-color: #333;
+  color: white;
+}
+
+.heading-count {
+  margin-left: 5px;
+  font-size: 0.9em;
+  color: #fff;
+}
+
+
+
